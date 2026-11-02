@@ -2,6 +2,8 @@
 
 An Isaac Lab robot platform that brings together an **SO101 arm**, a **single-sided 12 × 32 FlexiTac tactile sensor**, and an **InnoMaker U20CAM-1080P wrist camera**. Use it to study contact-rich manipulation with synchronized vision, tactile sensing, and robot state.
 
+![Platform overview: SO101 robot, wrist RGB camera, and FlexiTac sensor](docs/images/platform-overview.svg)
+
 [Get started](#quick-start) · [Run the demo](#run-the-demo) · [Use in your project](#use-in-your-project) · [Validation](docs/validation.md) · [License and attribution](#license-and-attribution)
 
 > **Status:** The platform has been tested in simulation. The modified wrist has **not** been printed or assembled on hardware, and the camera parameters are estimates, not a measured calibration.
@@ -111,6 +113,12 @@ platform = resolve_local_platform()
 ```
 
 Supply all six initial joint positions explicitly. Contact objects used with TacSL require an SDF collision mesh. The platform specifications and geometry are separated from the Isaac Lab adapter; Isaac Lab is the only supported simulation backend.
+
+## Example tactile output
+
+![12 by 32 tactile response from a simulated grasp](docs/images/tactile-peak.png)
+
+*Peak response per taxel across the independent 580-step grasp demo (seed 42). The color scale is an uncalibrated normal-contact proxy, not force in newtons. This heatmap contains no robot or CAD geometry.*
 
 ## Model and validation notes
 
