@@ -1,0 +1,405 @@
+{
+  "current_revision": {
+    "overall": "LOCAL_GEOMETRY_AND_SIMULATION_PASS_HARDWARE_UNVERIFIED",
+    "revision": "Wrist_Roll_08c_HexNut_M3_r1",
+    "date": "2026-11-02",
+    "cad": {
+      "status": "LOCAL_MOUNT_GEOMETRY_PASS",
+      "checks": {
+        "modified_vs_mount_mm3": 0.0,
+        "camera_hull_vs_modified_mm3": 0.0,
+        "removed_vs_servo_mm3": 0.0,
+        "original_vs_servo_mm3": 10.68090045944094,
+        "modified_vs_servo_mm3": 10.68090045944094
+      },
+      "fasteners": [
+        {
+          "name": "Screw1",
+          "wrist_mm3": 0.0,
+          "servo_mm3": 0.0,
+          "bracket_mm3": 9.064951032450308e-07
+        },
+        {
+          "name": "Nut1",
+          "wrist_mm3": 0.0,
+          "servo_mm3": 0.0,
+          "bracket_mm3": 0.0,
+          "entry_sweep_mm3": 0.0,
+          "seating_sweep_mm3": 0.0
+        },
+        {
+          "name": "Screw2",
+          "wrist_mm3": 0.0,
+          "servo_mm3": 0.0,
+          "bracket_mm3": 6.796886127933719e-07
+        },
+        {
+          "name": "Nut2",
+          "wrist_mm3": 0.0,
+          "servo_mm3": 0.0,
+          "bracket_mm3": 0.0,
+          "entry_sweep_mm3": 0.0,
+          "seating_sweep_mm3": 0.0
+        }
+      ],
+      "wall": {
+        "stock": {
+          "model": "stock",
+          "y_mm": 20.499,
+          "x_mm": 3.1,
+          "ligament_mm": 1.345187900927159
+        },
+        "modified": {
+          "model": "modified",
+          "y_mm": 17.201,
+          "x_mm": 3.1,
+          "ligament_mm": 1.5937151386920974
+        }
+      },
+      "wall_scope": "101 planes through nut pocket; shortest in-plane distance to another contour, not a global 3D wall-thickness or strength certificate",
+      "jaw_sample_count": 101,
+      "jaw_collisions": [],
+      "mesh": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "components": 1,
+        "degenerate_faces": 0
+      },
+      "removed_mm3": 239.20597990751256,
+      "removed_fraction": 0.003534313865641246,
+      "removed_bounds_mm": [
+        [
+          -10.0,
+          17.200056076049805,
+          -26.63326072692871
+        ],
+        [
+          5.900000095367432,
+          24.00006866455078,
+          -12.5
+        ]
+      ],
+      "pad_z_interval_mm": [
+        -112,
+        -48
+      ],
+      "unchanged_note": "Subtraction only, cuts are remote from tactile face and servo solid; inherited nominal CAD servo/wrist overlap is unchanged, not newly introduced",
+      "nut": {
+        "across_flats_mm": 5.5,
+        "height_mm": 2.4,
+        "pocket_af_mm": 5.6,
+        "clearance_per_flat_mm": 0.05,
+        "seat_y_mm": [
+          18.1,
+          20.5
+        ],
+        "servo_gap_mm": 1.0
+      },
+      "screw": {
+        "thread": "M3",
+        "length_mm": 8,
+        "head_diameter_mm": 4.5,
+        "head_height_mm": 3,
+        "reference": "NBK SNS-M3-8-SD",
+        "under_head_y_mm": 26,
+        "tip_y_mm": 18,
+        "servo_tip_gap_mm": 0.9,
+        "nut_full_height_engagement_mm": 2.4,
+        "bracket_head_recess_diameter_mm": 5.4,
+        "note": "Generic 5.5 mm M3 cap heads are not guaranteed to fit the unchanged official bracket"
+      },
+      "hardware_validation": "NOT_PERFORMED",
+      "strength": "NO_FEA_NO_LOAD_TEST",
+      "cable": "Existing channels untouched; camera cable route/strain relief and moving cable envelope not modeled; inspect on hardware"
+    },
+    "grasp": {
+      "mode": "grasp",
+      "steps": 580,
+      "seed": 42,
+      "camera": "true",
+      "render": "true",
+      "physics_hz": 240,
+      "tactile_hz": 60,
+      "rgb_hz": 30,
+      "max_lift_m": 0.06587928235530853,
+      "max_tactile": 0.0006869129720143974,
+      "mean_control_step_s": 0.11057923012878745,
+      "p95_control_step_s": 0.12869714364642276,
+      "full_grasp_pass": true
+    },
+    "grasp_motion": {
+      "status": "PASS",
+      "checked_frames": 580,
+      "sample_hz": 30,
+      "collision_tolerance_mm3": 0.1,
+      "pair_peak_mm3": {
+        "CameraBody / base_link": 0.0,
+        "CameraBody / gripper_link": 0.0,
+        "CameraBody / lower_arm_link": 0.0,
+        "CameraBody / moving_jaw_so101_v1_link": 0.0,
+        "CameraBody / shoulder_link": 0.0,
+        "CameraBody / upper_arm_link": 0.0,
+        "CameraBody / wrist_link": 0.0,
+        "CameraMount / base_link": 0.0,
+        "CameraMount / lower_arm_link": 0.0,
+        "CameraMount / moving_jaw_so101_v1_link": 0.0,
+        "CameraMount / shoulder_link": 0.0,
+        "CameraMount / upper_arm_link": 0.0,
+        "CameraMount / wrist_link": 0.0
+      },
+      "failures": [],
+      "allowed_fixed_mates": [
+        [
+          "CameraBody",
+          "CameraMount"
+        ],
+        [
+          "CameraMount",
+          "gripper_link"
+        ]
+      ],
+      "scope": "Actual cooked camera/mount solids against other robot links at every recorded control frame. No claim of continuous-time or full 6-DOF workspace certification.",
+      "joint_min_deg": [
+        -0.21814131439161108,
+        -103.34929304856627,
+        60.12171564066174,
+        -102.0439619359068,
+        -92.52739789362549,
+        -8.65481700394736
+      ],
+      "joint_max_deg": [
+        7.06291890135765,
+        15.83804243045879,
+        91.49047272478,
+        8.83442451213566,
+        93.18094454435817,
+        80.21144666906862
+      ],
+      "max_camera_to_gripper_translation_m": 4.7168178529658205e-08,
+      "max_camera_to_gripper_rotation_rad": 3.6986478085574535e-07,
+      "final_joint_target_error_deg": [
+        0.010123443413590241,
+        0.43521150774701195,
+        1.1109957849080703,
+        0.285822053358575,
+        0.013294705403171174,
+        0.007774121313303424
+      ],
+      "rgb_tactile_max_time_difference_s": 0.0
+    },
+    "sweep_motion": {
+      "status": "PASS",
+      "checked_frames": 680,
+      "sample_hz": 30,
+      "collision_tolerance_mm3": 0.1,
+      "pair_peak_mm3": {
+        "CameraBody / base_link": 0.0,
+        "CameraBody / gripper_link": 0.0,
+        "CameraBody / lower_arm_link": 0.0,
+        "CameraBody / moving_jaw_so101_v1_link": 0.0,
+        "CameraBody / shoulder_link": 0.0,
+        "CameraBody / upper_arm_link": 0.0,
+        "CameraBody / wrist_link": 0.0,
+        "CameraMount / base_link": 0.0,
+        "CameraMount / lower_arm_link": 0.0,
+        "CameraMount / moving_jaw_so101_v1_link": 0.0,
+        "CameraMount / shoulder_link": 0.0,
+        "CameraMount / upper_arm_link": 0.0,
+        "CameraMount / wrist_link": 0.0
+      },
+      "failures": [],
+      "allowed_fixed_mates": [
+        [
+          "CameraMount",
+          "gripper_link"
+        ],
+        [
+          "CameraBody",
+          "CameraMount"
+        ]
+      ],
+      "scope": "Actual cooked camera/mount solids against other robot links at every recorded control frame. No claim of continuous-time or full 6-DOF workspace certification.",
+      "joint_min_deg": [
+        -0.21814131439161108,
+        -103.34929304856627,
+        82.01829125172546,
+        -100.23091554148358,
+        -169.99999334703236,
+        -9.616280535295251
+      ],
+      "joint_max_deg": [
+        0.47316188836116224,
+        -64.66142136307822,
+        91.49453668733616,
+        -15.510941256012295,
+        169.96260489151572,
+        80.21408995227742
+      ],
+      "max_camera_to_gripper_translation_m": 4.853834897174882e-08,
+      "max_camera_to_gripper_rotation_rad": 4.4473368360810407e-07,
+      "final_joint_target_error_deg": [
+        0.0034128105876833213,
+        0.449828227920194,
+        1.0880067705339878,
+        0.2903126539631709,
+        0.013973722209298824,
+        0.0030653888995068115
+      ],
+      "rgb_tactile_max_time_difference_s": 0.0
+    },
+    "preservation": {
+      "moving_jaw_so101_v1_link/Visuals/part_0": {
+        "local_transform_equal": true,
+        "mesh_points_equal": true
+      },
+      "gripper_link/PadCollision": {
+        "local_transform_equal": true,
+        "mesh_points_equal": true
+      },
+      "gripper_link/TacSLSensor": {
+        "local_transform_equal": true
+      },
+      "joint_attributes_equal": true,
+      "Wrist_Roll_08c.stl": true,
+      "Moving_Jaw_08d.stl": true
+    },
+    "printability": {
+      "status": "PASS",
+      "layer_height_mm": 0.2,
+      "layers": 595,
+      "open_or_missing_layers_mm": [],
+      "hardware_print_test": "NOT_PERFORMED",
+      "note": "Supports and printer-specific fit compensation required; not a strength certificate"
+    },
+    "tests_passed": 7,
+    "release": "Derived CAD, USD, SCAD containing local imported geometry and images remain local-only pending upstream permission",
+    "reproducibility": {
+      "status": "PASS",
+      "method": "Fresh execution of final Python CSG source produces byte-identical STL",
+      "sha256": "214495f4b85d0038ddd991aad33b4a12d2b6f49c606f7a2c92f9490188cbe7a9"
+    }
+  },
+  "original_unmodified_candidate": {
+    "date": "2026-11-02",
+    "overall": "BLOCKED_MECHANICAL_FIT",
+    "simulator_diagnostic": "PASS",
+    "mount": "FAIL",
+    "license": "CUSTOM_CAD_REDISTRIBUTION_UNCONFIRMED",
+    "steps": 440,
+    "physics_hz": 240,
+    "tactile_hz": 60,
+    "rgb_hz": 30,
+    "seed": 42,
+    "max_lift_m": 0.06626145988702774,
+    "max_tactile_proxy": 0.0007285326719284058,
+    "final_object_z_m": 0.05031489580869675,
+    "final_tactile_proxy": 0.0,
+    "max_rgb_tactile_timestamp_difference_s": 0.0,
+    "timestamp_integer_reference": "physics_step / 240",
+    "performance": {
+      "conditions": "single environment, sequential paired runs; 150 control steps each, first 30 warmup; 240 Hz PhysX, 60 Hz 3456-sample tactile, 30 Hz global 960x720 RTX, optional 640x480 wrist RTX",
+      "summary": {
+        "baseline": {
+          "median_control_step_s": 0.11798035628162325,
+          "run_means_s": [
+            0.11798035628162325,
+            0.11724723073032996,
+            0.11872474388607467
+          ]
+        },
+        "camera": {
+          "median_control_step_s": 0.1245826090045739,
+          "run_means_s": [
+            0.12504456251820859,
+            0.1245826090045739,
+            0.1225346389284823
+          ]
+        }
+      },
+      "relative_change_percent": 5.596061014759801,
+      "baseline_rtf": 0.2825329095783157,
+      "camera_rtf": 0.267560084025127,
+      "runs": [
+        {
+          "label": "baseline",
+          "repeat": 0,
+          "mean_s": 0.11798035628162325,
+          "p95_s": 0.1733049829606898,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "38b221eb75befe66d62b90d9887cce94687c5f47243f0d6ca638b1127120e3da"
+        },
+        {
+          "label": "camera",
+          "repeat": 0,
+          "mean_s": 0.12504456251820859,
+          "p95_s": 0.17990088463993742,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "e2565f042f64b2279cb70497cbdbb81a7d66ddcc1ec672964c95135e80de832f"
+        },
+        {
+          "label": "baseline",
+          "repeat": 1,
+          "mean_s": 0.11724723073032996,
+          "p95_s": 0.11802998567000031,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "bfb2f8944caabc8ae48d7eb89086ba1c48c726789768d0abe9004d628b839cfb"
+        },
+        {
+          "label": "camera",
+          "repeat": 1,
+          "mean_s": 0.1245826090045739,
+          "p95_s": 0.13053442996460943,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "963cd30e163a2667aa5a0a8f7d8e07a0681cb63a00994e9f83d88af3587b4ded"
+        },
+        {
+          "label": "baseline",
+          "repeat": 2,
+          "mean_s": 0.11872474388607467,
+          "p95_s": 0.17447891593910753,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "ef9760dd0e11801ef06f9029c148c1f249499dafa7328fbfc8b63687d2afb96c"
+        },
+        {
+          "label": "camera",
+          "repeat": 2,
+          "mean_s": 0.1225346389284823,
+          "p95_s": 0.1231999471085146,
+          "initialization_status": "PASS",
+          "reset_status": "PASS",
+          "raw_summary_sha256": "0280d7779bb3aca8b34db452ecbb17c467825218ac647ff72f478c5027bafcbd"
+        }
+      ],
+      "scope": "step wall time with CUDA synchronization; excludes readback/plotting outside env.step; not multi-environment throughput",
+      "retention": "Final per-run timing and initialization/reset summaries retained; redundant hold-only screenshots and frame logs removed after consolidation."
+    },
+    "protected_geometry": [
+      {
+        "geometry": "gripper_link/Visuals/part_1",
+        "vertex_distance_m": 0.0,
+        "local_transform_difference": 0.0
+      },
+      {
+        "geometry": "moving_jaw_so101_v1_link/Visuals/part_0",
+        "vertex_distance_m": 0.0,
+        "local_transform_difference": 0.0
+      },
+      {
+        "geometry": "gripper_link/PadCollision",
+        "vertex_distance_m": 0.0,
+        "local_transform_difference": 0.0
+      }
+    ],
+    "tests": {
+      "standalone_unit": 6,
+      "integration_rejection": 3
+    },
+    "integration": "Public package adapter installed locally; normal scene activation disabled"
+  }
+}

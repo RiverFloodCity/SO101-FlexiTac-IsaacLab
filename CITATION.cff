@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "Please cite the original platform and tactile research as well as this implementation when using it."
+title: "SO101-FlexiTac-IsaacLab"
+type: software
+version: 0.1.0
+license: Apache-2.0
+authors:
+  - name: "SO101-FlexiTac-IsaacLab contributors"
+references:
+  - type: article
+    title: "VT-Refine: Learning Bimanual Assembly with Visuo-Tactile Feedback via Simulation Fine-Tuning"
+    authors:
+      - family-names: Huang
+        given-names: Binghao
+      - family-names: Xu
+        given-names: Jie
+      - family-names: Akinola
+        given-names: Iretiayo
+      - family-names: Yang
+        given-names: Wei
+      - family-names: Sundaralingam
+        given-names: Balakumar
+      - family-names: "O'Flaherty"
+        given-names: Rowland
+      - family-names: Fox
+        given-names: Dieter
+      - family-names: Wang
+        given-names: Xiaolong
+      - family-names: Mousavian
+        given-names: Arsalan
+      - family-names: Chao
+        given-names: Yu-Wei
+      - family-names: Li
+        given-names: Yunzhu
+    year: 2025
+    doi: 10.48550/arXiv.2510.14930
+    url: https://arxiv.org/abs/2510.14930
+    notes: "Full author list in the linked paper; Appendix B.2 is the mathematical reference, not copied software."
+  - type: software
+    title: "SO-ARM100 / SO101"
+    authors:
+      - name: TheRobotStudio
+    url: https://github.com/TheRobotStudio/SO-ARM100
+  - type: software
+    title: "LeFlexiTac"
+    authors:
+      - name: TNA001-AI
+    url: https://tna001-ai.github.io/LeFlexiTac/docs.html
+  - type: software
+    title: "so_arm_ros2"
+    authors:
+      - family-names: Kamath
+        given-names: Aditya
+    url: https://github.com/adityakamath/so_arm_ros2
